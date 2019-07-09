@@ -17,18 +17,18 @@
             <h1>Honda Quiz</h1>
             <h4>Test your brand specific car knowledge?</h4>
         </header>
-        
-        <div id="question"></div>
-        
-        <div id="answer">
-          <input type="text" id="usersAnswer">
-          <button class="submitBtn btn btn-success">Submit</button>
+          <div id="quizArea">
+            <div id="question"></div>
+
+            <div id="answer">
+              <input type="text" id="usersAnswer">
+              <button class="submitBtn btn btn-success">Submit</button>
+            </div>
+
+            <div id="next">
+              <button class="nextBtn btn btn-success">Next</button>  
+            </div>
         </div>
-        
-        <div id="next">
-          <button class="nextBtn btn btn-success">Next</button>  
-        </div>
-        
         <footer>
             <div>
             <hr>
