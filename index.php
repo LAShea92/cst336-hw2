@@ -22,7 +22,7 @@
         
         <div id="answer">
           <input type="text" id="usersAnswer">
-          <button id="submitAnswer">Check</button>
+          <button class="submitBtn btn btn-success">Submit</button>
         </div>
         
         <div id="next">
