@@ -82,5 +82,9 @@ function nextQuestion(){
 }
 
 function displayResult(){
-    $("#question").append("<h4>You got "  + totalCorrect + "/" + questions.length + " correct! Wow!</h4>");
+  $("#question").append("<br />");
+  $("#question").append("<br />");
+  $("#question").append("<br />");
+  $("#question").append("<br />");
+  $("#question").append("<h4>You got "  + totalCorrect + "/" + questions.length + " correct! Wow!</h4>");
 }
