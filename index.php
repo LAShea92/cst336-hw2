@@ -5,7 +5,8 @@
         <link  href="css/styles.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+      
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
@@ -22,14 +23,16 @@
 
             <div id="answer">
               <input type="text" id="usersAnswer">
-              <button class="submitBtn btn btn-success">Submit</button>
+              <button id="submitBtn" class="btn btn-success">Submit</button>
             </div>
             <div id="feedback">
               <h4 id="right">Correct!</h4>
               <h4 id="wrong">Incorrect!</h4>
             </div>
+            <br /><br /><br />
             <div id="next">
-              <button id="nextBtn" class= "btn btn-success">Next</button>  
+              <button id="nextBtn" class="btn btn-success">Next</button>
+              <button id="retryBtn" class="btn btn-success">Retry</button>
             </div>
           </div>
         <footer>

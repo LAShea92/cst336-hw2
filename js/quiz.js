@@ -6,20 +6,22 @@ var questions = ["What is the name of the engine that came in the third generati
 var answers = ["B18C", "Integra", "K Series"];
 var totalCorrect = 0;
 //LISTENERS
-$(".submitBtn").on("click", function(){
+$("#submitBtn").on("click", function(){
     getUserAnswer();
     disableButton($(this));
 });
 
-$(".nextBtn").on("click", function(){
+$("#nextBtn").on("click", function(){
+    enableButton(document.getElementById("submitBtn"));
+    clearText();
+    $("#right").hide();
+    $("#wrong").hide();
     nextQuestion();
-    enableButton(getElementById("submitBtn"));
-    getElementById("right").hide();
-    getElementById("wrong").hide();
 });
 
-$(".retryBtn").on("click", function(){
-    location.reload();
+$("#retryBtn").on("click", function(){
+    location.reload(true);
+    console.log("you pressed the button");
 });
 
 //FUNCTIONS
@@ -34,14 +36,20 @@ function displayQuestion(){
     }
 }
 
+function clearText(){
+    document.getElementById("usersAnswer").value = "";
+}
+
 function disableButton(btn){
+    console.log(btn);
     btn.prop("disabled", true);
     btn.attr("class", "btn btn-danger");
 }
 
 function enableButton(btn){
-    btn.prop("disabled", false);
-    btn.attr("class", "btn btn-success");
+    console.log(btn);
+    btn.removeAttribute("disabled");
+    btn.setAttribute("class", "btn btn-success");
 }
 
 function getUserAnswer(){
@@ -66,12 +74,13 @@ function nextQuestion(){
     else{
       $("#question").empty();
       $("#answer").empty();
+      $("#nextBtn").hide();
+      $("#retryBtn").show();
       displayResult();
     }
     console.log(current);
 }
 
 function displayResult(){
-    //$("#question").append("<h4>You got "  + totalCorrect + "/" + questions.length + " correct! Wow!</h4>");
-    //$("#next").append("<button class='retryBtn btn btn-success'>Retry</button>");
+    $("#question").append("<h4>You got "  + totalCorrect + "/" + questions.length + " correct! Wow!</h4>");
 }

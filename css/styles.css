@@ -1,6 +1,6 @@
-body {
-  background-color:#011F4B;
-  color: #FFF4E6;
+.container, body {
+  background-color: black;
+  color: white;
 }
 
 #quizArea{
@@ -10,6 +10,7 @@ body {
     border: solid;
     border-radius: 5px;
     border-width: 1px;
+    position:relative;
 }
 
 #answer{
@@ -18,21 +19,38 @@ body {
 
 #question{
     float: left:
+    color: #FFEDCC;
 }
 
 footer {
     font-size: .8em;
+    color: #FFB732;
 }
 
-#retry{
-    position: absolute;
-    bottom: 0;
+header{
+    color: #B20000;
 }
 
-#right, #wrong{
+#usersAnswer{
+  color: black;
+}
+
+#right{
     display: none;
+    color: #4CA64C;
+}
+
+#wrong{
+    display: none;
+    color: #FF9999;
 }
 
 #next{
-    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#retryBtn{
+    display: none;
 }
