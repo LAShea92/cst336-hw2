@@ -1,8 +1,38 @@
+body {
+  background-color:#011F4B;
+  color: #FFF4E6;
+}
+
 #quizArea{
     margin: 20px auto;
     width: 400px;
-    height: 400px;
+    height: 200px;
     border: solid;
     border-radius: 5px;
     border-width: 1px;
+}
+
+#answer{
+    padding-top:10px;
+}
+
+#question{
+    float: left:
+}
+
+footer {
+    font-size: .8em;
+}
+
+#retry{
+    position: absolute;
+    bottom: 0;
+}
+
+#right, #wrong{
+    display: none;
+}
+
+#next{
+    float: right;
 }

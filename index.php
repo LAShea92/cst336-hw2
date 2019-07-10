@@ -24,11 +24,14 @@
               <input type="text" id="usersAnswer">
               <button class="submitBtn btn btn-success">Submit</button>
             </div>
-
-            <div id="next">
-              <button class="nextBtn btn btn-success">Next</button>  
+            <div id="feedback">
+              <h4 id="right">Correct!</h4>
+              <h4 id="wrong">Incorrect!</h4>
             </div>
-        </div>
+            <div id="next">
+              <button id="nextBtn" class= "btn btn-success">Next</button>  
+            </div>
+          </div>
         <footer>
             <div>
             <hr>
